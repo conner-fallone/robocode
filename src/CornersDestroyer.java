@@ -94,10 +94,10 @@ public class CornersDestroyer extends AdvancedRobot
 		 * GoTo coordinates. Used for our robot to get to the center of the map.
 		 */
 		private void goTo(int x, int y) {
-    		double a;
-    		turnRightRadians(Math.tan(
-        	a = Math.atan2(x -= (int) getX(), y -= (int) getY()) 
-              	- getHeadingRadians()));
-    		ahead(Math.hypot(x, y) * Math.cos(a));
+			double a;
+			turnRightRadians(Math.tan(
+			a = Math.atan2(x -= (int) getX(), y -= (int) getY()) 
+				- getHeadingRadians()));
+			ahead(Math.hypot(x, y) * Math.cos(a));
 		}
 }
